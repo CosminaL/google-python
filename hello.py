@@ -21,11 +21,13 @@ print('y' not in 'Python')
 
 print("si Dumnezeu a zis: 'Sa se faca lumina!'")
 
+print(r"Somnoroase pasarile\nPe la cuiburi se aduna.")  # raw string - exact asa cum este
 print(""" poti sa scri ce doresti 
 
 ce doresti
    si cum doresti""")  # pastreaza exact asa cum am scris
 
+# placeholders
 output_str = "for only price {price:2.2f} dollars {cheers_msg}".format(price=49, cheers_msg="Have a great day!")
 print(output_str)
 
@@ -37,12 +39,12 @@ print(l)
 
 new_l = [1, '2', 'Ana are mere', [9, 10, 11], None]
 print(new_l)
-print(new_l[-1])
+print(new_l[-1])  # first element
 print(new_l[3:])  # 3 inclusive
 print(new_l[:3])  # 3 exclusive
 print(new_l[1:3])  # both inclusive
 print(new_l[1::2])  # de la 1 din 2 in 2
-print(new_l.index(1))  # where the first element is found
+print(new_l.index(1))  # where el 1 is found
 
 # second_list = list(l)
 second_list = l[::]  # make a copy of of the list
@@ -62,12 +64,14 @@ source = {
     }
 }
 
+print(source[2])
 print(source.get(2))  # value of key 2 -> NOT: source[2] => NULL
 print(source.get(5, "Invalid key!"))
 print(source.keys())  # dict_keys
 print(source.items())  # dict_items
+print(source.values())  # dict_values
 for key, value in source.items():
-    print(f'{key} -> {value} ')
+    print(f'{key} -> {value} ')  # inlocuirea directa a placeholders
 
 # copy dictionaries
 first_copy = source
