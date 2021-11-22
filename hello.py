@@ -70,7 +70,7 @@ print(source.get(5, "Invalid key!"))
 print(source.keys())  # dict_keys
 print(source.items())  # dict_items
 print(source.values())  # dict_values
-for key, value in source.items():
+for key, value in source.items(): # or kwargs.values() -> takes only values
     print(f'{key} -> {value} ')  # inlocuirea directa a placeholders
 
 # copy dictionaries
