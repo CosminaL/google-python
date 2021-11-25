@@ -25,10 +25,10 @@ print(fr_1)
 
 fr_2 = Fractie(4, 5)
 
-fr_sum = fr_1.__add__(fr_2)
+fr_sum = fr_1 + fr_2
 print(fr_sum)
 
-fr_diff = fr_1.__sub__(fr_2)
+fr_diff = fr_1 - fr_2
 print(fr_diff)
 
 fr_inv = fr_1.inverse()
